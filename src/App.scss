@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body, html, .App {
+    margin: 0;
+    padding: 0;
+
+    * {
+        box-sizing: border-box;
+    }
+}
+
+.bg {
+    background: linear-gradient(119.36deg, #464C6E 0%, #272B45 100%);
+    min-height: 100vh;
+    min-width: 100vw;
+    //display: flex;
+    //align-items: center;
+    //justify-content: center;
+}
+
+//.dash-container {
+//    background: radial-gradient(100% 197.75% at 0% 0%, #4D557A 5.73%, #2D324D 82.53%);
+//    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+//    box-shadow: -32px -32px 48px rgba(76, 83, 118, 0.17), 34px 34px 64px rgba(50, 54, 77, 0.48), inset -1px -1px 4px rgba(44, 48, 68, 0.2), inset 2px 2px 2px rgba(83, 92, 136, 0.11);
+//    border-radius: 41px;
+//
+//    height: calc(100vh - 160px);
+//    width: calc(100vw - 160px);
+//    margin: auto;
+//    padding: 40px 60px;
+//}
+
+.card {
+    background: linear-gradient(135deg, #495076 0%, #404669 100%);
+    box-shadow: -6px -6px 24px rgba(85, 93, 131, 0.48), 8px 8px 22px rgba(54, 59, 87, 0.24), inset 1px 1px 1px rgba(38, 49, 105, 0.05), inset -1px -1px 4px rgba(83, 92, 136, 0.12);
+    border-radius: 21px;
+    border: 2px solid #4f567a;
+}
+.eth-card{
+    background: linear-gradient(135deg, #495076 0%, #424869 100%);
+    opacity: 0.95;
+    box-shadow: -6px -6px 24px rgba(85, 93, 131, 0.48), 8px 8px 22px rgba(54, 59, 87, 0.24), inset 1px 1px 1px rgba(38, 49, 105, 0.05), inset -1px -1px 4px rgba(83, 92, 136, 0.12);
+    border-radius: 21px;
+}
+.card-inset{
+    background: linear-gradient(135deg, #424869 0%, #4A5178 81.64%);
+    box-shadow: inset 2px 2px 4px rgba(38, 49, 105, 0.18), inset -2px -2px 4px rgba(83, 92, 136, 0.16);
+    border-radius: 21px;
+}
+.card-onset{
+    background: linear-gradient(135deg, #484F75 0%, #393F5F 100%);
+    opacity: 0.95;
+    box-shadow: -6px -6px 24px rgba(85, 93, 131, 0.4), 8px 8px 22px rgba(54, 59, 87, 0.2), inset 1px 1px 1px rgba(38, 49, 105, 0.05), inset -1px -1px 4px rgba(83, 92, 136, 0.12);
+    border-radius: 21px;
+}
+.heading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    color: #D2D6EF;
+    text-shadow: 1px 1px 1px rgba(38, 43, 70, 0.32);
+
+    &.big-heading{
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+}
+
+.heading-2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    color: #D2D6EF;
+    opacity: 0.38;
+    text-shadow: 1px 1px 1px rgba(38, 43, 70, 0.32);
+}
+
+.numbers {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    color: #D2D6EF;
+    text-shadow: 1px 1px 1px rgba(38, 43, 70, 0.32);
+
+}
+
+.img-circle {
+    height: 16px;
+    width: 16px;
+}
+.percent{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    color: #D2D6EF;
+    text-shadow: 1px 1px 1px rgba(38, 43, 70, 0.32);
+
+}
+
+.p{
+    svg.radial-progress {
+        height: auto;
+        max-width: 60px;
+        padding: 12px;
+        transform: rotate(-90deg);
+        width: 100%;
+    }
+    svg.radial-progress circle {
+        fill: rgba(0, 0, 0, 0);
+        stroke: #fff;
+        stroke-dashoffset: 219.91148575129;
+        stroke-width: 10;
+    }
+    svg.radial-progress circle.incomplete {
+        opacity: 0.25;
+    }
+    svg.radial-progress{
+        circle.complete {
+            stroke-dasharray: 219.91148575129; /* Circumference */
+        }
+        &.yellow{
+            circle.complete {
+                stroke: rgba(119, 149, 18, 1);
+            }
+
+        }
+    }
+}
+.double-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    &>div{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+    svg.radial-progress {
+        height: auto;
+        max-width: 200px;
+        padding: 6px;
+        transform: rotate(-90deg);
+        width: 100%;
+    }
+    .p1{
+        height: 200px;
+        width: 200px;
+    }
+    .p2{
+        height: 140px;
+        width: 140px;
+        svg.radial-progress circle {
+            stroke-width: 3;
+        }
+    }
+    .card{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(315deg, #424869 14.06%, #4A5178 86.98%);
+        opacity: 1;
+        box-shadow: -6px -6px 20px rgba(85, 93, 131, 0.48), 8px 8px 18px rgba(54, 59, 87, 0.2), inset 1px 1px 1px rgba(38, 49, 105, 0.05), inset -1px -1px 4px rgba(83, 92, 136, 0.12);
+
+    }
+
+    svg.radial-progress circle {
+        fill: rgba(0, 0, 0, 0);
+        stroke: #fff;
+        stroke-dashoffset: 219.91148575129;
+        stroke-width: 2;
+    }
+    svg.radial-progress circle.incomplete {
+        stroke: #3C4163;
+        z-index: -1;
+    }
+    svg.radial-progress{
+        circle.complete {
+            stroke-dasharray: 219.91148575129; /* Circumference */
+        }
+        &.green{
+            circle.complete{
+                stroke: #33FF77;
+                opacity: 1;
+            }
+        }
+        &.orange{
+            circle.complete{
+                stroke: #F47169;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+#chartdiv {
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+}
+#chartdiv2 {
+    width: 100%;
+    height: 100px;
+}
+
+.separator{
+    background: #313650;
+    opacity: 0.8;
+    height: 2px;
+}
+
+.stats-2{
+    h5, h1{
+        margin: 0;
+    }
+
+    .row{
+        margin: 10px 0;
+        align-items: center;
+    }
+    .stats-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .progress-line{
+            height: 8px;
+            box-shadow: inset 1px 1px 1px #343952;
+            filter: drop-shadow(1px 1px 1px rgba(90, 97, 141, 0.81));
+            border-radius: 5px;
+            width: 100px;
+            background-color: #3C4261;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            &:after{
+                content: " ";
+                height: 100%;
+                width: 3px;
+                border-radius: 5px;
+                background-color: white;
+                left: auto;
+                right: auto;
+                margin: auto;
+                position: absolute;
+            }
+            &>div{
+                height: 100%;
+                width: 50%;
+                border-radius: 5px;
+
+                &.negative{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    div{
+                        height: 100%;
+                        width: 25%;
+                        background: linear-gradient(140.71deg, #F47169 19.29%, #FF8080 76.18%);
+                        box-shadow: 1px 1px 1px rgba(38, 43, 70, 0.32), inset 0px 1px 1px #FFB5B4;
+                        border-radius: 40px 0px 0px 40px;
+
+                    }
+                }
+                &.positive{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    div{
+                        height: 100%;
+                        width: 25%;
+                        background: #B4BE23;
+                        box-shadow: inset 0px 1px 1px #F6FD93;
+                        border-radius: 40px 0px 0px 40px;
+                        transform: matrix(-1, 0, 0, 1, 0, 0);
+                    }
+                }
+            }
+        }
+
+        .status-row{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+    }
+}
+
+.assets-sidebar{
+    .asset-icon-wrapper{
+        height: 60px;
+        width: 60px;
+    }
+}
