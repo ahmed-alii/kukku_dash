@@ -4,9 +4,27 @@ import Tokenomics from "./components/Tokenomics";
 import Stats from "./components/Stats";
 import MainChart from "./components/MainChart";
 import Sidebar from "./components/Sidebar";
+import {useEffect} from "react";
+import $ from 'jquery';
 
 
 function App() {
+    useEffect(()=>{
+
+        $(document).ready(function (){
+            $('svg.radial-progress').each(function (index, value) {
+                $(this).find($('circle.complete')).removeAttr('style');
+                let percent, radius, circumference, strokeDashOffset;
+                percent = $(value).data('percentage');
+                radius = $(this).find($('circle.complete')).attr('r');
+                circumference = 2 * Math.PI * radius;
+                strokeDashOffset = circumference - ((percent * circumference) / 100);
+                $(this).find($('circle.complete')).animate({'stroke-dashoffset': strokeDashOffset}, 800);
+            });
+        })
+
+
+    })
     return (
         <div className="App bg pt-5">
             <div className="dash-container container">

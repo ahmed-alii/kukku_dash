@@ -23,19 +23,19 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
             crossorigin="anonymous"></script>
-    <script>
-      $(document).ready(function (){
-        $('svg.radial-progress').each(function (index, value) {
-          $(this).find($('circle.complete')).removeAttr('style');
-          let percent, radius, circumference, strokeDashOffset;
-          percent = $(value).data('percentage');
-          radius = $(this).find($('circle.complete')).attr('r');
-          circumference = 2 * Math.PI * radius;
-          strokeDashOffset = circumference - ((percent * circumference) / 100);
-          $(this).find($('circle.complete')).animate({'stroke-dashoffset': strokeDashOffset}, 800);
-        });
-      })
+<!--    <script>-->
+<!--      $(document).ready(function (){-->
+<!--        $('svg.radial-progress').each(function (index, value) {-->
+<!--          $(this).find($('circle.complete')).removeAttr('style');-->
+<!--          let percent, radius, circumference, strokeDashOffset;-->
+<!--          percent = $(value).data('percentage');-->
+<!--          radius = $(this).find($('circle.complete')).attr('r');-->
+<!--          circumference = 2 * Math.PI * radius;-->
+<!--          strokeDashOffset = circumference - ((percent * circumference) / 100);-->
+<!--          $(this).find($('circle.complete')).animate({'stroke-dashoffset': strokeDashOffset}, 800);-->
+<!--        });-->
+<!--      })-->
 
-    </script>
+<!--    </script>-->
   </body>
 </html>
