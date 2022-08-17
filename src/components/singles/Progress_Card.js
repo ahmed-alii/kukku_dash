@@ -26,7 +26,7 @@ export default function Progress_Card(){
                         </div>
                     </div>
                     <div className="col-lg-4">
-                        <div className="my-4 d-flex align-items-center justify-content-between">
+                        <div className="my-4 d-flex d-lg-block align-items-center justify-content-between">
                             <div className="burn-rate d-flex align-items-center">
                                 <div className="d-flex align-items-center justify-content-center">
                                     <img src={bb1} alt="" className="me-1 img-circle" />
@@ -37,7 +37,7 @@ export default function Progress_Card(){
                                 2,431,520
                             </div>
                         </div>
-                        <div className="my-4 d-flex align-items-center justify-content-between">
+                        <div className="my-4 d-flex d-lg-block align-items-center justify-content-between">
                             <div className="mint-rate d-flex align-items-center">
                                 <div className="d-flex align-items-center justify-content-center">
                                     <img src={bb2} alt="" className="me-1 img-circle" />

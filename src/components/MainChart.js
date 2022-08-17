@@ -1,11 +1,11 @@
 import {Line} from 'react-chartjs-3';
 
-export default function MainChart(){
+export default function MainChart() {
     const data = {
-        labels: ["", '5 Nov', '10 Nov', '15 Nov', '20 Nov', '25 Nov', '30 Nov', "5 Dec", "10 Dec", "15 Dec"],
+        labels: ['5 Nov', '10 Nov', '15 Nov', '20 Nov', '25 Nov', '30 Nov', "5 Dec", "10 Dec", "15 Dec"],
         datasets: [{
             label: 'Effectiveness Score',
-            data: [5, 6, 7, 14, 9, 10, 11, 18, 20, 22, 22, 23],
+            data: [5, 6, 7, 14, 9, 10, 11, 18, 20],
             backgroundColor: [
                 "rgba(58, 63, 95, 1)"
             ],
@@ -19,33 +19,31 @@ export default function MainChart(){
     }
     const options = {
         scales: {
-            y: {
-                display: false,
-                beginAtZero: true,
-                grid: {
-                    drawBorder: false,
-                    display: false
-                }
-            },
-            x: {
-                ticks:{
-                    color: "black",
-                },
-                grid: {
+            xAxes: [{
+                gridLines: {
                     display: false,
-                    drawBorder: false,
-                    color: "black",
+                },
+                ticks:{
+                    fontColor: "black",
                 }
-            }
+            }],
+            yAxes: [{
+                drawBorder: false,
+                display: false,
+                gridLines: {
+                    color: "rgba(0, 0, 0, 0)",
+                    drawBorder: false,
+                }
+            }]
         },
         plugins: {legend: {display: false},},
         elements: {
-            point:{
+            point: {
                 radius: 0
             }
         }
     }
-    return(
+    return (
         <div className="col-md-12">
             <div className="card">
                 <div className="card-body">
@@ -55,8 +53,10 @@ export default function MainChart(){
                         <span className="heading-2">+0.52%</span>
                     </div>
                 </div>
-                <Line height={170} width={0} data={data} options={options} />
-                <br />
+                <div>
+                    <Line height={270} width={0} data={data} options={options} legend={false}/>
+                </div>
+                <br/>
             </div>
         </div>
     )
