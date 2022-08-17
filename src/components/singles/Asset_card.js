@@ -5,12 +5,12 @@ export default function Asset_card(){
             <div className="card">
                 <div className="card-body">
                     <div className="row align-items-center">
-                        <div className="col-lg-4 col-2">
+                        <div className="col-lg-4 col-3">
                             <div className="card-inset asset-icon-wrapper d-flex align-items-center justify-content-center p-3">
                                 <img src={icon} alt="" />
                             </div>
                         </div>
-                        <div className="col-lg-8 col-10">
+                        <div className="col-lg-8 col-9">
                             <h1 className="heading">Total Supply</h1>
                         </div>
                     </div>

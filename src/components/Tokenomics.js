@@ -3,7 +3,7 @@ import Eth_Card from "./singles/Eth_Card";
 
 export default function Tokenomics(){
     return(
-        <div className="col-md-6">
+        <div className="col-md-6 mb-4">
             <h5 className="heading">Tokenomics</h5>
             <Progress_Card/>
             <Eth_Card/>

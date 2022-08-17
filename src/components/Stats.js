@@ -3,7 +3,7 @@ import HoldersCard from "./singles/HoldersCard";
 
 export default function Stats(){
     return(
-        <div className="col-md-5 offset-md-1">
+        <div className="col-md-5 offset-md-1 mb-4">
             <h5 className="heading">Status</h5>
             <SMS_Card/>
             <HoldersCard/>

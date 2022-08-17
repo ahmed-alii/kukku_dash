@@ -6,7 +6,7 @@ export default function Progress_Card(){
         <div className="card mt-4">
             <div className="card-body">
                 <div className="row align-items-center">
-                    <div className="col-lg-8 d-flex justify-content-center align-items-center">
+                    <div className="col-xl-8 d-flex justify-content-center align-items-center">
                         <div className="double-p">
                             <div className="p1">
                                 <svg className="radial-progress green" data-percentage={25} viewBox="0 0 80 80">
@@ -25,7 +25,7 @@ export default function Progress_Card(){
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-xl-4">
                         <div className="my-4 d-flex d-lg-block align-items-center justify-content-between">
                             <div className="burn-rate d-flex align-items-center">
                                 <div className="d-flex align-items-center justify-content-center">

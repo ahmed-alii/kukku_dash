@@ -3,11 +3,11 @@ export default function HoldersCard(){
         <div className="card mt-4 card-onset stats-2">
             <div className="card-body">
                 <div className="row">
-                    <div className="col-lg-6">
+                    <div className="col-xl-6">
                         <h5 className="heading fw-normal">Token Holders</h5>
                         <h1 className="heading big-heading">183,973</h1>
                     </div>
-                    <div className="col-lg-6 mt-4 mt-lg-0">
+                    <div className="col-xl-6 mt-4 mt-lg-0">
                         <div className="stats-wrapper">
                             <div className="progress-line">
                                 <div className="negative" />
@@ -24,11 +24,11 @@ export default function HoldersCard(){
                 </div>
                 <div className="separator" />
                 <div className="row">
-                    <div className="col-lg-6">
+                    <div className="col-xl-6">
                         <h5 className="heading fw-normal">Active Users</h5>
                         <h1 className="heading big-heading">183,973</h1>
                     </div>
-                    <div className="col-lg-6 mt-4 mt-lg-0">
+                    <div className="col-xl-6 mt-4 mt-lg-0">
                         <div className="stats-wrapper">
                             <div className="progress-line">
                                 <div className="negative"><div style={{width: '15%'}} /></div>
