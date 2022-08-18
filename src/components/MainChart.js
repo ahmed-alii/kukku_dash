@@ -5,7 +5,7 @@ export default function MainChart() {
         labels: ['5 Nov', '10 Nov', '15 Nov', '20 Nov', '25 Nov', '30 Nov', "5 Dec", "10 Dec", "15 Dec"],
         datasets: [{
             label: 'Effectiveness Score',
-            data: [5, 6, 7, 14, 9, 10, 11, 18, 20],
+            data: [0.003, 0.03, 0.04, 0.04, 0.06, 0.03, 0.03, 0.05, 0.06],
             backgroundColor: [
                 "rgba(58, 63, 95, 1)"
             ],
@@ -24,15 +24,18 @@ export default function MainChart() {
                     display: false,
                 },
                 ticks:{
-                    fontColor: "black",
+                    fontColor: "white",
                 }
             }],
             yAxes: [{
-                drawBorder: false,
-                display: false,
                 gridLines: {
-                    color: "rgba(0, 0, 0, 0)",
-                    drawBorder: false,
+                    display: false,
+                },
+                ticks:{
+                    fontColor: "white",
+                    callback: function(value, index, ticks) {
+                        return '$ ' + value;
+                    }
                 }
             }]
         },
@@ -44,7 +47,7 @@ export default function MainChart() {
         }
     }
     return (
-        <div className="col-md-12">
+        <div className="col-md-12 mb-4">
             <div className="card">
                 <div className="card-body">
                     <div>
@@ -54,7 +57,7 @@ export default function MainChart() {
                     </div>
                 </div>
                 <div>
-                    <Line height={270} width={0} data={data} options={options} legend={false}/>
+                    <Line height={250} width={0} data={data} options={options} legend={false}/>
                 </div>
                 <br/>
             </div>

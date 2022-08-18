@@ -1,5 +1,5 @@
 import icon from "../../images/mticon.svg"
-export default function Asset_card(){
+export default function Asset_card({title, number}){
     return(
         <div className="col-md-12 single-asseet mb-4">
             <div className="card">
@@ -11,12 +11,12 @@ export default function Asset_card(){
                             </div>
                         </div>
                         <div className="col-lg-8 col-9">
-                            <h1 className="heading">Total Supply</h1>
+                            <h1 className="heading">{title}</h1>
                         </div>
                     </div>
                     <div className="row mt-3 align-items-center">
                         <div className="col-12 ps-md-4">
-                            <h1 className="heading big-heading">143,986,547.00</h1>
+                            <h1 className="heading big-heading">{number}</h1>
                             <p className="m-0">
                                 <span className="heading-2">+150$</span>
                                 &nbsp;
